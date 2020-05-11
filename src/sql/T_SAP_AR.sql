@@ -152,6 +152,7 @@ PO_Box_State  varchar2( 80) ,
 Company_Postal_Code  varchar2( 10    ),
 Language varchar2( 80) ,    
 Telephone  varchar2( 240    ),
+Telephone_transco  varchar2( 240    ),
 Additional_Telephone_2  varchar2( 30    ),
 Additional_Telephone_3  varchar2( 30    ),
 Mobile  varchar2( 30    ),
@@ -190,7 +191,7 @@ create or replace view sap_ar_gd_v
 as select 
 lot,
 org_id,
-Customer_Number || '";"' ||
+'"' || Customer_Number || '";"' ||
 BP_Grouping   || '";"' ||
 KTOKD  || '";"' ||
 Name  || '";"' ||
@@ -272,7 +273,7 @@ PO_Box_Country  || '";"' ||
 PO_Box_State  || '";"' ||
 Company_Postal_Code  || '";"' ||
 Language || '";"' ||
-Telephone  || '";"' ||
+Telephone_transco  || '";"' ||
 Additional_Telephone_2  || '";"' ||
 Additional_Telephone_3  || '";"' ||
 Mobile  || '";"' ||
@@ -291,6 +292,113 @@ Collection_Management_Active || '";'     "LINE"
 from sap_ar_gd
 ;
 
+create or replace view sap_ar_gd_v_csv 
+as select 
+lot,
+org_id,
+'="' || Customer_Number || '";="' ||
+BP_Grouping   || '";="' ||
+KTOKD  || '";="' ||
+Name  || '";="' ||
+Name_2  || '";="' ||
+Name_3  || '";="' ||
+Name_4  || '";="' ||
+Title  || '";="' ||
+First_name  || '";="' ||
+Last_name  || '";="' ||
+Middle_name   || '";="' ||
+Birth_name  || '";="' ||
+Search_Term_1  || '";="' ||
+Search_Term_2  || '";="' ||
+Supplier  || '";="' ||
+Group_Key  || '";="' ||
+Natural_Person_Under_the_Tax || '";="' ||
+Trading_Partner  || '";="' ||
+Suppress_Tax_Jurisdiction_Code  || '";="' ||
+Legal_form  || '";="' ||
+Legal_Entity  || '";="' ||
+Date_founded  || '";="' ||
+Liquidation_date  || '";="' ||
+International_location_number1  || '";="' ||
+International_location_number2  || '";="' ||
+Check_digit_for_the_intern_loc  || '";="' ||
+DME_indicator  || '";="' ||
+Instructuion_Key  || '";="' ||
+Alternative_Payer  || '";="' ||
+Nielsen_Indicator  || '";="' ||
+Regional_market  || '";="' ||
+KUKLA  || '";="' ||
+Hierarchy_assignment  || '";="' ||
+Industry_Code_1  || '";="' ||
+Industry_Code_2  || '";="' ||
+Industry_Code_3  || '";="' ||
+Industry_Code_4  || '";="' ||
+Industry_Code_5  || '";="' ||
+Suframa_Code  || '";="' ||
+RG_Number  || '";="' ||
+Issued_by  || '";="' ||
+State1 || '";="' ||
+RG_Issuing_Date  || '";="' ||
+RIC_Number  || '";="' ||
+Foreign_National_Registration  || '";="' ||
+RNE_Issuing_Date  || '";="' ||
+CNAE  || '";="' ||
+Legal_Nature  || '";="' ||
+CRT_Number  || '";="' ||
+ICMS_Taxpayer  || '";="' ||
+Industry_Main_Type  || '";="' ||
+Tax_Declaration_Type  || '";="' ||
+Company_Size  || '";="' ||
+Declaration_Regimen  || '";="' ||
+External_Address_Number  || '";="' ||
+Street  || '";="' ||
+House_Number  || '";="' ||
+District  || '";="' ||
+Different_City  || '";="' ||
+Postal_Code1 || '";="' ||
+City1 || '";="' ||
+Country1 || '";="' ||
+State2 || '";="' ||
+Time_Zone2 || '";="' ||
+Transportation_Zone  || '";="' ||
+Building  || '";="' ||
+Room  || '";="' ||
+Floor  || '";="' ||
+CO_Name  || '";="' ||
+Street_2  || '";="' ||
+Street_3  || '";="' ||
+Supplement  || '";="' ||
+Street_4  || '";="' ||
+Street_5  || '";="' ||
+Tax_Jurisdiction_Code  || '";="' ||
+PO_Box  || '";="' ||
+Postal_Code2 || '";="' ||
+PO_Box_City  || '";="' ||
+PO_Box_Country  || '";="' ||
+PO_Box_State  || '";="' ||
+Company_Postal_Code  || '";="' ||
+Language || '";="' ||
+Telephone_transco  || '";="' ||
+Additional_Telephone_2  || '";="' ||
+Additional_Telephone_3  || '";="' ||
+Mobile  || '";="' ||
+Additional_Mobile_2  || '";="' ||
+Additional_Mobile_3  || '";="' ||
+Fax  || '";="' ||
+Additional_Fax_2  || '";="' ||
+Additional_Fax_3  || '";="' ||
+Email  || '";="' ||
+Additional_Email_2  || '";="' ||
+Additional_Email_3  || '";="' ||
+Communication_Type  || '";="' ||
+Web_Site  || '";="' ||
+Central_Posting_Block  || '";="' ||
+Collection_Management_Active || '";'     "LINE"
+from sap_ar_gd
+;
+
+
+
 drop table sap_ar_bp_roles;
 create table sap_ar_bp_roles (
 lot varchar2(30) ,
@@ -300,7 +408,7 @@ org_id number );
 
 
 create or replace view sap_ar_bp_roles_v
-as select lot,org_id , Customer_Number || '";"' || bp_role|| '";' "LINE"
+as select lot,org_id , '"' || Customer_Number || '";"' || bp_role|| '";' "LINE"
 from sap_ar_bp_roles;
 
 
@@ -337,7 +445,7 @@ as
 select
 lot,
 org_id ,
-KUNNR || '";"' ||
+'"' || KUNNR || '";"' ||
 VKORG || '";"' ||
 VTWEG || '";"' ||
 SPART || '";"' ||
@@ -354,7 +462,7 @@ create or replace view sap_ar_gt_v
 as select 
 lot,
 org_id , 
-Customer_Number || '";"' ||
+'"' || Customer_Number || '";"' ||
 Text_ID || '";"' ||
 Language_Key || '";"' ||
 Text || '";'  "LINE"
@@ -415,7 +523,7 @@ create or replace view sap_ar_cd_v
 as select
 lot,
 org_id, 
-Customer_Number || '";"' ||
+'"' || Customer_Number || '";"' ||
 Company_Code || '";"' ||
 Posting_Block || '";"' ||
 Payment_Block|| '";"' ||
@@ -513,7 +621,7 @@ as
 select
 lot,
 org_id ,
-KUNNR || '";"' ||
+'"' || KUNNR || '";"' ||
 BU_ADEXT || '";"' ||
 STREET || '";"' ||
 HOUSE_NUM1 || '";"' ||
@@ -571,7 +679,7 @@ create or replace view SAP_AR_I_V
 as select
 lot,
 ORG_ID,
-KUNNR || '";"' ||
+'"' || KUNNR || '";"' ||
 IND_SECTOR || '";"' ||
 ISDEF|| '";' LINE
 from SAP_AR_I;
@@ -591,7 +699,7 @@ as
 select 
 lot,
 org_id ,
-KUNNR || '";"' ||
+'"' || KUNNR || '";"' ||
 ALAND || '";"' ||
 TATYP || '";"' ||
 TAXKD || '";'  LINE 
@@ -611,7 +719,7 @@ as
 select 
 lot,
 org_id ,
-KUNNR || '";"' ||
+'"' || KUNNR || '";"' ||
 TAXTYPE || '";"' ||
 TAXNUM || '";' 
  LINE 
@@ -630,9 +738,9 @@ create or replace view SAP_AR_IN_V
 as select 
 lot,
 org_id ,
-KUNNR || '";"' ||
+'"' || KUNNR || '";"' ||
 TTYPE || '";"' ||
-IDNUMBER || '";"' LINE
+IDNUMBER || '";' LINE
 from sap_ar_in;
 
 
@@ -667,7 +775,7 @@ create or replace view sap_ar_cp_v
 as select 
 lot,
 ORG_ID ,
-KUNNR  || '";"' ||
+'"' || KUNNR  || '";"' ||
 PARNR  || '";"' ||
 TITLE  || '";"' ||
 VNAME  || '";"' ||
@@ -763,7 +871,7 @@ create or replace view sap_ar_sd_v
 as select 
 lot,
 org_id , 
-KUNNR		|| '";"' ||
+'"' || KUNNR		|| '";"' ||
 VKORG		|| '";"' ||
 VTWEG		|| '";"' ||
 SPART		|| '";"' ||

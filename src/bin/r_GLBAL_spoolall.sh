@@ -4,8 +4,9 @@ do
 
 a=$(echo $i | cut -d":" -f1)
 b=$(echo $i | cut -d":" -f2)
+c=$(echo $i | cut -d":" -f3)
 
-FIC=$SAP_OUT/${TWO_TASK}_${LOT}_${ORG_ID}_${a}_${b}.csv
+FIC=$SAP_OUT/${TWO_TASK}_${LOT}_${ORG_ID}_${a}_${b}.${c}
 
 echo "Creation du fichier $FIC" | tee -a $LOGDATA
 echo | tee -a $LOGDATA

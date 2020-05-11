@@ -1,2 +1,2 @@
-sap_apfac_voi_v:APFAC_CUSTOMER_OPEN_ITEM:
-sap_apfac_ti_v:APFAC_TAX_ITEM:
+sap_apfac_voi_v:APFAC_CUSTOMER_OPEN_ITEM:txt:
+sap_apfac_ti_v:APFAC_TAX_ITEM:txt:

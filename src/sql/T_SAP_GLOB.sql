@@ -28,6 +28,27 @@ Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('11090','LOT2');
 Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('11270','LOT2');
 Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('11273','LOT2');
 
+insert into sap_glob_perimetre (org_id,lot ) values(189,'LOT3') ;
+insert into sap_glob_perimetre (org_id,lot ) values(5726,'LOT3') ;
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('83','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('86','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('144','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('186','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('187','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('188','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('191','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('4225','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('4585','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('4905','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('7110','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('7330','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('7450','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('10770','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('11070','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('11090','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('11270','LOT3');
+Insert into SAP_GLOB_PERIMETRE (ORG_ID,LOT) values ('11273','LOT3');
+
 create table sap_glob_ordre (
 ordre number,
 org_id number,

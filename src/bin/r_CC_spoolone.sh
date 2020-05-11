@@ -1,5 +1,10 @@
 
+x=$(echo $NLS_LANG | cut -d. -f2)
+fin=$(echo $2 | cut -d. -f2)
+debut=$(echo $2 | cut -d. -f1)
 
+
+fic=${debut}_${x}.${fin}
 
 sqlplus -s $SAP_CONNECT <<-EOF
 
@@ -11,7 +16,7 @@ set termout off
 set feedback off
 set pages 0
 set verify off
-spool $2
+spool ${fic}
 
 select line from  $1
 $3

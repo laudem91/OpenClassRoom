@@ -262,6 +262,27 @@ and country1 ='FR'
 and lot = sap_lot
 ;
 
+
+insert into sap_errors (
+lot,
+org_id,
+table_name  ,
+cle1    ,
+libelle , groupesearch)
+select lot,org_id,'SAP_AR_GD' , customer_number , 
+     'WARNING Telephone non conforme :'|| telephone || ' devient ' || REGEXP_REPLACE( replace(replace(telephone,' ' ,''),'.',''), '[^0-9]+', '')  ,
+     'TELEPHONE'
+from sap_ar_gd
+where lot = sap_lot
+and replace(replace(telephone,' ',''),'.','') !=  REGEXP_REPLACE( replace(replace(telephone,' ' ,''),'.',''), '[^0-9]+', '')
+;
+
+prompt formatage du No de telephone
+
+update sap_ar_gd
+set telephone_transco = REGEXP_REPLACE( replace(replace(telephone,' ' ,''),'.',''), '[^0-9]+', '')
+where lot = sap_lot;
+
 insert into sap_errors (
 lot,
 org_id,
@@ -270,7 +291,7 @@ cle1    ,
 libelle ,groupesearch)
 select lot,org_id,'SAP_AR_GD' , customer_number , 'Telephone trop grand ( 30 max ) :'|| telephone ,'TELEPHONE'
 from sap_ar_gd
-where length(telephone) > 30
+where length(telephone_transco) > 30
 and lot = sap_lot
 ;
 
