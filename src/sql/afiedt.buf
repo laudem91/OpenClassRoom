@@ -1,0 +1,52 @@
+declare 
+x number;
+si_error varchar2(10);
+procedure transco_compte_gene ( p_lot in varchar2 , p_org_id in number)
+is
+begin
+delete sap_tr_result where lot = p_lot and org_id = p_org_id and table_name = 'SAP_AR_CD';
+update sap_ar_cd
+set akont_transco = null
+where lot = p_lot
+and org_id = p_org_id;
+for c1 in ( select a.rowid fromrowid , a.* , ( select cpte_cible
+                      from sap_tr_comptes_gene
+                      where akont = cpte_source) akont_transco2
+             from sap_ar_cd a
+            where lot = p_lot
+            and org_id = p_org_id 
+            for update of lot
+            )
+loop
+null;
+update sap_ar_cd set akont_transco = c1.akont_transco2
+where rowid = c1.fromrowid;
+si_error := 'OK';
+if c1.akont_transco2 is null
+   then
+   si_error := 'KO';
+end if;
+insert into sap_tr_result (lot,org_id,table_name,pk1_origine,pk1_description,pk2_origine,pk2_description,
+                           column_name,column_value,column_value_transco,commentaire,type_error)
+values (
+c1.lot    , -- lot
+c1.org_id    , --org_id
+'SAP_AR_CD'    , --table_name
+c1.customer_number    , --pk1_origine
+'CUSTOMER_NUMBER' , --pk1_description
+c1.company_code    , --pk2_origine
+'COMPANY_CODE'    , --pk2_description
+'AKONT'    , --column_name
+c1.akont    , --column_value
+c1.akont_transco2    , --column_value_transco
+null    , --commentaire
+si_error );     --type_error
+end loop;
+null;
+end;
+begin
+transco_compte_gene('LOT1',189);
+commit;
+null;
+end;
+/

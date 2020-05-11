@@ -1,0 +1,15 @@
+THESEUS code;THESEUS description;SAP Code payment;SAP Description;commentaire
+FR_COMPTANT;GFI France, Immédiat;NT00 ;Payable upon receipt. Payable immediately Due Net;
+n/a;;NT05;Net Due in 5 days;Code inutile / Désactivation possible ?
+n/a;;NT07;Net Due in 7 days;Code inutile / Désactivation possible ?
+n/a;;NT08;Net Due in 8 Days;Code inutile / Désactivation possible ?
+n/a;;NT15;Net Due in 15 days;Code inutile / Désactivation possible ?
+FR_30J_NET;GFI France, 30 jours nets;NT30;Net Due in 30 days;
+FR_45J;GFI France,  45 jours nets;NT45 ;Net Due in 45 Days;
+FR_60J_NET;GFI France, 60 jours nets;NT60 ;Net Due in 60 days;
+;;SEPA ;SEPA Direct Debit;explication ?
+n/a;;ZE15 ;15 days EOM;
+FR_30J_FDM;GFI France, 30 jours fin de mois;ZE30 ;30 days EOM;
+FR_FACTURE_FDM;GFI_France,facture fin de mois;ZE30 ;30 days EOM;
+FR_45J_FDM;GFI_45j_Fin_de_mois;ZE45 ;45 days EOM;
+FR_60J_10_FDM;GFI France, 60 jours, le 10;NT60 ;Net Due in 60 days;A confirmer par Manuel

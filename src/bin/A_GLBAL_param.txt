@@ -1,0 +1,1 @@
+sap_glbal_gb_v_sum:GLBAL_GL_BALANCES:

@@ -1,0 +1,13 @@
+THESEUS code;THESEUS description;SAP Code ;SAP Description;remarque
+EFT_XCT;Vimt international tiers;F;Foreign bank Transfer;
+CHECK;Chèque;C;Check;
+n/a;;M;Virement à écheance (VCOM);
+EFT;Vimt sepa tiers;T;SEPA Credit Transfer;Faut-il renvoyer les virts SEPA FR vers le code V ci-dessous ?
+n/a;;V;Virement bancaire domestique;Faut-il renvoyer les virts SEPA FR vers le code V ci-dessous ?
+EFT_ICT;Vimt INTERCO;;;Quid gestion SAP de ces virements non SEPA ? Virement de trésorerie.
+EFT_INT_XCT_DEVISE;Virmt INTERCO DEVISES;;;Quid gestion SAP de ces virements non SEPA ? Virement de trésorerie.
+EFT_INT_XCT;Virmt INTERCO hors Sepa;;;Quid gestion SAP de ces virements non SEPA ? Virement de trésorerie.
+WIRE;Transmission bancaire;;;Ecriture THESEUS sans fichier de virement. Quel code dans SAP ?
+CLEARING;Interne;;;Vérifier si équivalent WIRE (MFE) (ex: EDF, EGENCIA) si non équivalent quel code faut-il mettre dans SAP ?
+;;;;
+;;;;

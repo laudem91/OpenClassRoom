@@ -1,0 +1,24 @@
+THESEUS CODE;THESEUS Description;THESEUS Commentaire;SAP Code;SAP Description;SAP Commentaire
+PC20.0_INTRA;;;E7;;
+PD02.1_ABS;;;V7;;
+PD05.5_ABS;;;V2;;
+PD05.5_IMMO;;;n/a;;
+PD07.0_ABS;;;V5;;
+PD08.5_ABS;;;VX;;
+PD10.0_ABS;;;V9;;
+PD19.6_ABS;;;V4;;
+PD19.6_IMMO;;;I4;;
+PD20.0_ABS;;;V6;;
+PD20.0_IMMO;;;I5;;
+PD20.0_INTRA;;;E7;;
+PD20.6_ABS;;;n/a;;
+PD20.6_IMMO;;;n/a;;
+PE05.5_ABS;;;W9;;
+PE07.0_ABS;;;B7;;
+PE08.5_ABS;;;WX;;
+PE10.0_ABS;;;W2;;
+PE13.0_ABS;;;n/a;;
+PE19.6_ABS;;;W4;;
+PE20.0_ABS;;;W1;;
+PEXO;;;V0V1";;
+PREPRISE;;;;;

@@ -1,0 +1,12 @@
+CREATE OR REPLACE  TRIGGER SAP_ERRORS_INS
+BEFORE INSERT
+   ON SAP_ERRORS
+    FOR EACH ROW 
+
+DECLARE
+   -- variable declarations
+
+BEGIN
+:new.DATEC := sysdate;
+END;
+/

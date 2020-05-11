@@ -1,0 +1,950 @@
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:36 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 11
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:36 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_AGENT.ctl
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_AGENT.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_AGENT.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_AGENT, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+AGENT_SOURCE                        FIRST     *   ;  O(") CHARACTER            
+AGENT_SOURCE_DESC                    NEXT     *   ;  O(") CHARACTER            
+AGENT_CIBLE                          NEXT     *   ;  O(") CHARACTER            
+AGENT_CIBLE_DESC                     NEXT     *   ;  O(") CHARACTER            
+
+
+Table SAP_TR_AGENT:
+  11 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  66048 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            11
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Apr 24 10:32:36 2020
+Run ended on Fri Apr 24 10:32:36 2020
+
+Elapsed time was:     00:00:00.37
+CPU time was:         00:00:00.00
+
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:36 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 36
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:36 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_AR_CODE_TERM.ctl
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_AR_CODE_TERM.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_AR_CODE_TERM.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_AR_CODE_TERM, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TERM_SOURCE                         FIRST     *   ;  O(") CHARACTER            
+TERM_SOURCE_DESC                     NEXT     *   ;  O(") CHARACTER            
+TERM_CIBLE                           NEXT     *   ;  O(") CHARACTER            
+TERM_CIBLE_DESC                      NEXT     *   ;  O(") CHARACTER            
+
+
+Table SAP_TR_AR_CODE_TERM:
+  36 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  66048 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            36
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Apr 24 10:32:36 2020
+Run ended on Fri Apr 24 10:32:37 2020
+
+Elapsed time was:     00:00:00.18
+CPU time was:         00:00:00.01
+
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:37 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 17
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:37 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_AR_CODE_TVA.ctl
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_AR_CODE_TVA_COLLECTEE.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_AR_CODE_TVA_COLLECTEE.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_AR_CODE_TVA, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TVA_SOURCE                          FIRST     *   ;  O(") CHARACTER            
+TVA_SOURCE_DESC                      NEXT     *   ;  O(") CHARACTER            
+TVA_SOURCE_COM                       NEXT     *   ;  O(") CHARACTER            
+TVA_CIBLE                            NEXT     *   ;  O(") CHARACTER            
+TVA_CIBLE_DESC                       NEXT     *   ;  O(") CHARACTER            
+
+Record 17: Discarded - all columns null.
+
+Table SAP_TR_AR_CODE_TVA:
+  16 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  1 Row not loaded because all fields were null.
+
+
+Space allocated for bind array:                  82560 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            17
+Total logical records rejected:         0
+Total logical records discarded:        1
+
+Run began on Fri Apr 24 10:32:37 2020
+Run ended on Fri Apr 24 10:32:37 2020
+
+Elapsed time was:     00:00:00.17
+CPU time was:         00:00:00.00
+Data load failed..
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:37 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 12
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:37 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_AR_PAY_METHOD.ctl
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_AR_PAY_METHOD.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_AR_PAY_METHOD.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_AR_PAY_METHOD, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+PAY_SOURCE                          FIRST     *   ;  O(") CHARACTER            
+PAY_SOURCE_DESC                      NEXT     *   ;  O(") CHARACTER            
+PAY_CIBLE                            NEXT     *   ;  O(") CHARACTER            
+PAY_CIBLE_DESC                       NEXT     *   ;  O(") CHARACTER            
+
+Record 9: Discarded - all columns null.
+Record 10: Discarded - all columns null.
+Record 11: Discarded - all columns null.
+Record 12: Discarded - all columns null.
+
+Table SAP_TR_AR_PAY_METHOD:
+  8 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  4 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  66048 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            12
+Total logical records rejected:         0
+Total logical records discarded:        4
+
+Run began on Fri Apr 24 10:32:37 2020
+Run ended on Fri Apr 24 10:32:37 2020
+
+Elapsed time was:     00:00:00.16
+CPU time was:         00:00:00.00
+Data load failed..
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:37 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 128
+Commit point reached - logical record count 192
+Commit point reached - logical record count 256
+Commit point reached - logical record count 320
+Commit point reached - logical record count 384
+Commit point reached - logical record count 448
+Commit point reached - logical record count 512
+Commit point reached - logical record count 576
+Commit point reached - logical record count 640
+Commit point reached - logical record count 704
+Commit point reached - logical record count 768
+Commit point reached - logical record count 832
+Commit point reached - logical record count 896
+Commit point reached - logical record count 960
+Commit point reached - logical record count 1024
+Commit point reached - logical record count 1088
+Commit point reached - logical record count 1152
+Commit point reached - logical record count 1216
+Commit point reached - logical record count 1280
+Commit point reached - logical record count 1286
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:37 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_COMPTES_GENE_MULTI.ctl
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_COMPTES_GENE_MULTI.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_COMPTES_GENE_MULTI.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_COMPTES_GENE_MULTI, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CPTE_SOURCE                         FIRST     *   ;  O(") CHARACTER            
+CPTE_SOURCE_DESC                     NEXT     *   ;  O(") CHARACTER            
+CPTE_CIBLE                           NEXT     *   ;  O(") CHARACTER            
+CPTE_CIBLE_DESC                      NEXT     *   ;  O(") CHARACTER            
+NOLINE                                                    SEQUENCE (1, 1)
+
+
+Table SAP_TR_COMPTES_GENE_MULTI:
+  1286 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  67520 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:          1286
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Apr 24 10:32:37 2020
+Run ended on Fri Apr 24 10:32:37 2020
+
+Elapsed time was:     00:00:00.35
+CPU time was:         00:00:00.01
+
+remise à niveau de la table SAP_TR_COMPTES_GENE_MULTI
+Remise a niveau de 281840 vers 28188000
+Remise a niveau de 401110 vers 40102009
+Remise a niveau de 401110 vers 40103009
+Remise a niveau de 401150 vers 40102000
+Remise a niveau de 401150 vers 40171000
+Remise a niveau de 401150 vers 40172000
+Remise a niveau de 401150 vers 40173000
+Remise a niveau de 408100 vers 40810009
+Remise a niveau de 408101 vers 40810049
+Remise a niveau de 408101 vers 40810059
+Remise a niveau de 408150 vers 40810040
+Remise a niveau de 408150 vers 40810050
+Remise a niveau de 408400 vers 40840010
+Remise a niveau de 409100 vers 40912000
+Remise a niveau de 409100 vers 40913000
+Remise a niveau de 409700 vers 40981010
+Remise a niveau de 409700 vers 40981040
+Remise a niveau de 409700 vers 40981050
+Remise a niveau de 409701 vers 40981019
+Remise a niveau de 409701 vers 40981049
+Remise a niveau de 409701 vers 40981059
+Remise a niveau de 411110 vers 41101000
+Remise a niveau de 411140 vers 41103009
+Remise a niveau de 411140 vers 41102009
+Remise a niveau de 411150 vers 41171000
+Remise a niveau de 411150 vers 41172000
+Remise a niveau de 411150 vers 41173000
+Remise a niveau de 418100 vers 41802000
+Remise a niveau de 418100 vers 41803000
+Remise a niveau de 418100 vers 41801010
+Remise a niveau de 418100 vers 41802010
+Remise a niveau de 418100 vers 41803010
+Remise a niveau de 418100 vers 41801040
+Remise a niveau de 418100 vers 41802040
+Remise a niveau de 418100 vers 41803040
+Remise a niveau de 418100 vers 41801050
+Remise a niveau de 418101 vers 41802009
+Remise a niveau de 418101 vers 41803009
+Remise a niveau de 418101 vers 41801019
+Remise a niveau de 418101 vers 41802019
+Remise a niveau de 418101 vers 41803019
+Remise a niveau de 418101 vers 41801049
+Remise a niveau de 418101 vers 41802049
+Remise a niveau de 418101 vers 41803049
+Remise a niveau de 418101 vers 41801059
+Remise a niveau de 419200 vers 41913000
+Remise a niveau de 419800 vers 41982000
+Remise a niveau de 419800 vers 41983000
+Remise a niveau de 419800 vers 41981010
+Remise a niveau de 419800 vers 41982010
+Remise a niveau de 419800 vers 41983010
+Remise a niveau de 419800 vers 41981040
+Remise a niveau de 419800 vers 41982040
+Remise a niveau de 419800 vers 41983040
+Remise a niveau de 419800 vers 41981050
+Remise a niveau de 419801 vers 41982009
+Remise a niveau de 419801 vers 41983009
+Remise a niveau de 419801 vers 41981019
+Remise a niveau de 419801 vers 41982019
+Remise a niveau de 419801 vers 41983019
+Remise a niveau de 419801 vers 41981049
+Remise a niveau de 419801 vers 41982049
+Remise a niveau de 419801 vers 41983049
+Remise a niveau de 419801 vers 41981059
+Remise a niveau de 421100 vers 42140000
+Remise a niveau de 445668 vers 44566110
+Remise a niveau de 486200 vers 48610040
+Remise a niveau de 486200 vers 48610050
+Remise a niveau de 487000 vers 48701009
+Remise a niveau de 487000 vers 48702000
+Remise a niveau de 487000 vers 48702009
+Remise a niveau de 487000 vers 48703000
+Remise a niveau de 487000 vers 48703009
+Remise a niveau de 487000 vers 48701010
+Remise a niveau de 487000 vers 48701019
+Remise a niveau de 487000 vers 48702010
+Remise a niveau de 487000 vers 48702019
+Remise a niveau de 487000 vers 48703010
+Remise a niveau de 487000 vers 48703019
+Remise a niveau de 487000 vers 48700040
+Remise a niveau de 487000 vers 48700050
+Remise a niveau de 604400 vers 60410300
+Remise a niveau de 615650 vers 61553900
+Remise a niveau de 621401 vers 62183209
+Remise a niveau de 622650 vers 62220000
+Remise a niveau de 622650 vers 62266000
+Remise a niveau de 635150 vers 63520000
+Remise a niveau de 645100 vers 64512000
+Remise a niveau de 645100 vers 64513000
+Remise a niveau de 645100 vers 64514000
+Remise a niveau de 645100 vers 64515000
+Remise a niveau de 645100 vers 64516000
+Remise a niveau de 645200 vers 64522000
+Remise a niveau de 645200 vers 64523000
+Remise a niveau de 645200 vers 64524000
+Remise a niveau de 645200 vers 64525000
+Remise a niveau de 645200 vers 64526000
+Remise a niveau de 645300 vers 64532000
+Remise a niveau de 645300 vers 64533000
+Remise a niveau de 645300 vers 64534000
+Remise a niveau de 645300 vers 64535000
+Remise a niveau de 645300 vers 64536000
+Remise a niveau de 645400 vers 64542000
+Remise a niveau de 645400 vers 64543000
+Remise a niveau de 645400 vers 64544000
+Remise a niveau de 645400 vers 64545000
+Remise a niveau de 645400 vers 64546000
+Remise a niveau de 645590 vers 64565000
+Remise a niveau de 645590 vers 64550000
+Remise a niveau de 645590 vers 64551000
+Remise a niveau de 645590 vers 64552000
+Remise a niveau de 645590 vers 64553000
+Remise a niveau de 645590 vers 64554000
+Remise a niveau de 645590 vers 64555000
+Remise a niveau de 645590 vers 64556000
+Remise a niveau de 681110 vers 68105200
+Remise a niveau de 681129 vers 68188000
+Remise a niveau de 705203 vers 70620000
+Remise a niveau de 705226 vers 70620000
+Remise a niveau de 705227 vers 70620000
+Remise a niveau de 705233 vers 70620009
+Remise a niveau de 705703 vers 70620000
+Remise a niveau de 705733 vers 70620009
+Remise a niveau de 706201 vers 70610009
+Remise a niveau de 706202 vers 70620000
+Remise a niveau de 706205 vers 70620000
+Remise a niveau de 706603 vers 70620000
+Remise a niveau de 706633 vers 70620009
+Remise a niveau de 706663 vers 70620000
+Remise a niveau de 706700 vers 70610009
+Remise a niveau de 706703 vers 70620000
+Remise a niveau de 706733 vers 70620009
+Remise a niveau de 707103 vers 70720000
+Remise a niveau de 707133 vers 70720009
+Remise a niveau de 708513 vers 70820000
+Remise a niveau de 708533 vers 70820009
+Remise a niveau de 708803 vers 70820000
+Remise a niveau de 708832 vers 70821009
+Remise a niveau de 708832 vers 70831009
+Remise a niveau de 708833 vers 70820009
+Remise a niveau de 709500 vers 70952000
+Remise a niveau de 709500 vers 70953000
+
+PL/SQL procedure successfully completed.
+
+Flagage du compte defaut si plusieurs fois le meme compte
+
+PL/SQL procedure successfully completed.
+
+passage de compte_gene_multi vers compte_gene
+
+1144 rows deleted.
+
+
+1144 rows created.
+
+
+Commit complete.
+
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:38 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 10
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:38 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_EDI.ctl
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_EDI-20200406.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_EDI-20200406.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_EDI, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+EDI_SOURCE                          FIRST     *   ;  O(") CHARACTER            
+EDI_CIBLE                            NEXT     *   ;  O(") CHARACTER            
+EDI_CIBLE_DESC                       NEXT     *   ;  O(") CHARACTER            
+
+
+Table SAP_TR_EDI:
+  10 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  49536 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            10
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Apr 24 10:32:38 2020
+Run ended on Fri Apr 24 10:32:38 2020
+
+Elapsed time was:     00:00:00.33
+CPU time was:         00:00:00.00
+
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:38 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 4
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:38 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_HOUSE_BANK.ctl
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_HOUSE_BANK.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_HOUSE_BANK.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_HOUSE_BANK, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+COMPANY_CODE                        FIRST     *   ;  O(") CHARACTER            
+MODULE_OAP                           NEXT     *   ;  O(") CHARACTER            
+HOUSE_BANK                           NEXT     *   ;  O(") CHARACTER            
+
+
+Table SAP_TR_HOUSE_BANK:
+  4 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  49536 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:             4
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Apr 24 10:32:38 2020
+Run ended on Fri Apr 24 10:32:39 2020
+
+Elapsed time was:     00:00:00.31
+CPU time was:         00:00:00.01
+
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:39 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 128
+Commit point reached - logical record count 192
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:39 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_NUMBER_CATEGORY.ctl
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_NUMBER_CATEGORY.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_NUMBER_CATEGORY.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_NUMBER_CATEGORY, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TR_CATEGORY                         FIRST     *   ;  O(") CHARACTER            
+NAME                                 NEXT     *   ;  O(") CHARACTER            
+VAT                                  NEXT     *   ;  O(") CHARACTER            
+
+
+Table SAP_TR_NUMBER_CATEGORY:
+  192 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  49536 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:           192
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Apr 24 10:32:39 2020
+Run ended on Fri Apr 24 10:32:39 2020
+
+Elapsed time was:     00:00:00.31
+CPU time was:         00:00:00.00
+
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:39 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 28
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:39 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_PAYS.ctl
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_PAYS.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_PAYS.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_PAYS, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+PAYS                                FIRST     *   ;  O(") CHARACTER            
+CODE2                                NEXT     *   ;  O(") CHARACTER            
+CODE3                                NEXT     *   ;  O(") CHARACTER            
+NUMERO                               NEXT     *   ;  O(") CHARACTER            
+INTRA                                NEXT     *   ;  O(") CHARACTER            
+
+
+Table SAP_TR_PAYS:
+  28 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  82560 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            28
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Apr 24 10:32:39 2020
+Run ended on Fri Apr 24 10:32:39 2020
+
+Elapsed time was:     00:00:00.17
+CPU time was:         00:00:00.00
+
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:39 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 128
+Commit point reached - logical record count 192
+Commit point reached - logical record count 256
+Commit point reached - logical record count 320
+Commit point reached - logical record count 384
+Commit point reached - logical record count 448
+Commit point reached - logical record count 512
+Commit point reached - logical record count 576
+Commit point reached - logical record count 640
+Commit point reached - logical record count 704
+Commit point reached - logical record count 768
+Commit point reached - logical record count 832
+Commit point reached - logical record count 896
+Commit point reached - logical record count 960
+Commit point reached - logical record count 1024
+Commit point reached - logical record count 1088
+Commit point reached - logical record count 1152
+Commit point reached - logical record count 1216
+Commit point reached - logical record count 1280
+Commit point reached - logical record count 1344
+Commit point reached - logical record count 1408
+Commit point reached - logical record count 1472
+Commit point reached - logical record count 1536
+Commit point reached - logical record count 1600
+Commit point reached - logical record count 1664
+Commit point reached - logical record count 1728
+Commit point reached - logical record count 1792
+Commit point reached - logical record count 1856
+Commit point reached - logical record count 1920
+Commit point reached - logical record count 1984
+Commit point reached - logical record count 2048
+Commit point reached - logical record count 2112
+Commit point reached - logical record count 2176
+Commit point reached - logical record count 2240
+Commit point reached - logical record count 2304
+Commit point reached - logical record count 2368
+Commit point reached - logical record count 2432
+Commit point reached - logical record count 2496
+Commit point reached - logical record count 2560
+Commit point reached - logical record count 2624
+Commit point reached - logical record count 2688
+Commit point reached - logical record count 2752
+Commit point reached - logical record count 2816
+Commit point reached - logical record count 2880
+Commit point reached - logical record count 2944
+Commit point reached - logical record count 3008
+Commit point reached - logical record count 3072
+Commit point reached - logical record count 3136
+Commit point reached - logical record count 3200
+Commit point reached - logical record count 3264
+Commit point reached - logical record count 3328
+Commit point reached - logical record count 3392
+Commit point reached - logical record count 3456
+Commit point reached - logical record count 3520
+Commit point reached - logical record count 3584
+Commit point reached - logical record count 3648
+Commit point reached - logical record count 3712
+Commit point reached - logical record count 3776
+Commit point reached - logical record count 3840
+Commit point reached - logical record count 3904
+Commit point reached - logical record count 3968
+Commit point reached - logical record count 4032
+Commit point reached - logical record count 4096
+Commit point reached - logical record count 4160
+Commit point reached - logical record count 4224
+Commit point reached - logical record count 4288
+Commit point reached - logical record count 4352
+Commit point reached - logical record count 4416
+Commit point reached - logical record count 4480
+Commit point reached - logical record count 4544
+Commit point reached - logical record count 4608
+Commit point reached - logical record count 4672
+Commit point reached - logical record count 4736
+Commit point reached - logical record count 4800
+Commit point reached - logical record count 4815
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:39 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_REGION.ctl
+Character Set UTF8 specified for all input.
+
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_REGION.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_REGION.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_REGION, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+LANGUE                              FIRST     *   ;       CHARACTER            
+PAYS                                 NEXT     *   ;       CHARACTER            
+REGION                               NEXT     *   ;       CHARACTER            
+DESCRIPTION                          NEXT     *   ;       CHARACTER            
+
+
+Table SAP_TR_REGION:
+  4815 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  66048 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:          4815
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Fri Apr 24 10:32:39 2020
+Run ended on Fri Apr 24 10:32:40 2020
+
+Elapsed time was:     00:00:00.72
+CPU time was:         00:00:00.02
+
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:40 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 25
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:40 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_AP_CODE_TVA.ctl
+Data File:      /data/thebdevp/appdevp/lduchet/SAPDEVP/data/S4GFI_TR_AP_CODE_TVA_DEDUCTIBLE.csv
+  Bad File:     /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_AP_CODE_TVA_DEDUCTIBLE.csv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 1000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SAP_TR_AP_CODE_TVA, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TVA_SOURCE                          FIRST     *   ;  O(") CHARACTER            
+TVA_SOURCE_DESC                      NEXT     *   ;  O(") CHARACTER            
+TVA_SOURCE_COM                       NEXT     *   ;  O(") CHARACTER            
+TVA_CIBLE                            NEXT     *   ;  O(") CHARACTER            
+TVA_CIBLE_DESC                       NEXT     *   ;  O(") CHARACTER            
+
+Record 22: Rejected - Error on table SAP_TR_AP_CODE_TVA, column TVA_CIBLE.
+second enclosure string not present
+Record 23: Rejected - Error on table SAP_TR_AP_CODE_TVA, column TVA_SOURCE_DESC.
+second enclosure string not present
+
+Table SAP_TR_AP_CODE_TVA:
+  23 Rows successfully loaded.
+  2 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  82560 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            25
+Total logical records rejected:         2
+Total logical records discarded:        0
+
+Run began on Fri Apr 24 10:32:40 2020
+Run ended on Fri Apr 24 10:32:40 2020
+
+Elapsed time was:     00:00:00.21
+CPU time was:         00:00:00.00
+Data load failed..
+Le fichier /data/thebdevp/appdevp/lduchet/SAPDEVP/log/S4GFI_TR_AP_CODE_TVA_DEDUCTIBLE.csv.bad  existe
+Data load failed...
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:40 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:40 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+SQL*Loader-500: Unable to open file (/data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_AP_CODE_TERM.ctl)
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: No such file or directory
+Data load failed..
+Le fichier existe
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:40 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Fri Apr 24 10:32:40 2020
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+SQL*Loader-500: Unable to open file (/data/thebdevp/appdevp/lduchet/SAPDEVP/bin/A_SAP_TR_AP_PAY_METHOD.ctl)
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: No such file or directory
+Data load failed..

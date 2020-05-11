@@ -1,0 +1,11 @@
+sap_ar_gd_v:AR_GENERAL_DATA:
+sap_ar_bp_roles_v:AR_BP_ROLES:
+sap_ar_gt_v:AR_GENERAL_TEXT:
+sap_ar_sp_v:AR_SALES_PARTNER:
+sap_ar_cd_v:AR_COMPANY_DATA:
+sap_ar_i_v:AR_INDUSTRIES:
+sap_ar_tc_v:AR_TAX_CLASSIFICATIONS:
+sap_ar_tn_v:AR_TAX_NUMBERS:
+sap_ar_in_v:AR_IDENTIFICATION_NUMBERS:
+sap_ar_cp_v:AR_CONTACT_PERSON:
+sap_ar_sd_v:AR_SALES_DATA:

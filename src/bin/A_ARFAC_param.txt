@@ -1,0 +1,2 @@
+sap_arfac_coi_v:ARFAC_CUSTOMER_OPEN_ITEM:
+sap_arfac_ti_v:ARFAC_TAX_ITEM:

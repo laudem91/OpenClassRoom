@@ -1,0 +1,17 @@
+THESEUS CODE;THESEUS Description;THESEUS Commentaire;Code SAP;Description;Commentaire
+D05.5_ABS;;;A2;TVA collectée 5,5 %;Débit / Bien
+D08.5_ABS;;;A8;TVA collecté sur les débits 8,5 %;
+D19.6_ABS;;;AG;TVA collectée 19,6 %;Débit / Bien
+D20.0_ABS;;;AU;TVA collectée sur les débits 20 %;Débit / Bien
+E05.5_ABS;;;B9;TVA collectée différée 5,5 %;Encaissement / Service
+E08.5_ABS;;;B8;TVA collecté sur les encaissements 8,5%;
+E19.6_ABS;;;B4;TVA collectée différée 19,6 %;Encaissement / Service
+E20.0_ABS;;;B5;TVA collectée sur les encaissements 20 %;Encaissement / Service
+E20.6_ABS;;;n/a;n'existe pas dans SAP ?;
+E7_ABS;;;W5;à créer - succursale Singapour;
+EXONERE;;;A1;Vente exonérée de TVA;Débit / Bien
+INTRA;;;E6;TVA exportation CE;Débit / Bien
+NA;;;;;
+NON_SOUMIS;;;A0;Aucune TVA collectée;
+REPRISE;;;;;
+TECH;;;;;

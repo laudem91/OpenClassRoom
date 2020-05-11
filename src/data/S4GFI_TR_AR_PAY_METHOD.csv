@@ -1,0 +1,13 @@
+THESEUS code;THESEUS description;SAP Code;SAP Description;commentaire / question;Commentaire Hichem
+n.a;;1;Traite à l'acceptation;;
+n.a;;2 ;Billet à ordre (recu);;
+Prélèvement SOCIETE GENERALE;;E ;Direct Debit;seule cette valeur figure dans le référentiel client;Prélèvement de manière général
+drawee;;H;Bill of exchange AR;;Correspond à Traite, Lettre de change
+Autres XXX;;V ;Virement bancaire domestique;avec XXX = nom de la banque. Ex : Autres BANQUE POPULAIRE;Tous les virement
+Chèque ZZZ;;K;Check AR;avec ZZZ = nom de la banque. Ex : Chèque BNP PARIBAS;Tous les chèques 
+Autres BNP FACTOR;;V ;Virement bancaire domestique;;
+Lettrage;;A définir ;;Pour les règlements à 0 (zéro). Voir les clients concernés.;Ceci n'est pas une méthode de paiement
+;;;;;
+;;;;;
+;;;;;
+;;;;;
