@@ -1,6 +1,7 @@
 create or replace package sap_artransco
 as
 
+procedure transco_konzs ( p_lot in varchar2 );
 procedure transco_ktgrd ( p_lot in varchar2 , p_org_id in number);
 procedure transco_payment_method_coi ( p_lot in varchar2 , p_org_id in number);
 procedure transco_code_tva_arfac_coi ( p_lot in varchar2 , p_org_id in number);
@@ -25,6 +26,67 @@ show error
 create or replace package body sap_artransco
 as
 
+procedure transco_konzs  ( p_lot in varchar2 )
+-- transco unique pour les clients , pas de contact ( ZCP1)
+is
+x number;
+tab varchar2(30) := 'SAP_AR_GD';
+col varchar2(30) := 'KONZS';
+
+si_error varchar2(10);
+begin
+
+dbms_output.put_line('Transco : ' || tab ||'.' || col ||  '    Lot='|| p_lot );
+
+delete sap_tr_result where lot = p_lot and table_name = tab and column_name = col;
+
+update sap_ar_gd
+set KONZS_transco = null
+where lot = p_lot
+and bp_grouping != 'ZCP1';
+
+for c1 in ( select a.rowid fromrowid , a.* , ( select grp_cible
+                      from sap_tr_ar_grp_client b
+                      where a.KONZS = b.GRP_SOURCE
+                        ) KONZS_transco2
+             from sap_ar_gd a
+            where lot = p_lot
+            and bp_grouping != 'ZCP1'
+            for update of lot
+            )
+loop
+null;
+update sap_ar_gd set KONZS_transco = c1.KONZS_transco2
+where rowid = c1.fromrowid;
+
+si_error := 'OK';
+
+if c1.konzs is null
+then
+   si_error := 'WARNING';
+elsif c1.KONZS_transco2 is null 
+   then
+   si_error := 'ERROR';
+end if;
+
+insert into sap_tr_result (lot,org_id,table_name,pk1_origine,pk1_description,pk2_origine,pk2_description,
+                           column_name,column_value,column_value_transco,commentaire,type_error)
+values (
+c1.lot    , -- lot
+c1.org_id    , --org_id
+tab    , --table_name
+c1.customer_number    , --pk1_origine
+'CUSTOMER_NUMBER' , --pk1_description
+c1.org_id    , --pk2_origine
+'ORG_ID'    , --pk2_description
+'KONZS'    , --column_name
+c1.KONZS    , --column_value
+c1.KONZS_transco2    , --column_value_transco
+null    , --commentaire
+si_error );     --type_error
+end loop;
+null;
+end;
 
 procedure transco_ktgrd ( p_lot in varchar2 , p_org_id in number)
 is

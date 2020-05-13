@@ -111,8 +111,71 @@ where
 -- /
 
 
+prompt indication des clients hors perimetre
+
+delete sap_errors
+where lot = sap_lot
+and table_name = 'SAP_AR'
+and groupesearch = 'HP';
 
 
+insert into sap_errors (
+lot,
+org_id,
+table_name  ,
+cle1    ,
+libelle,
+groupesearch  )
+select lot, org_id_source ,'SAP_AR' , account_number_source , 
+       'WARNING : Client-Site HP: '|| account_number_source || ' est hors perimetre pour attribute HP avec un solde a ' || nvl(to_char(solde_source),'nul') , 'HP'
+from sap_ar
+where  eligible = 'Y' 
+and ( attribute4 = 'HP' or attribute5 = 'HP' )
+and lot = sap_lot
+;
+
+prompt indication des clients avec attribute 4 ou 5 vide
+
+delete sap_errors
+where lot = sap_lot
+and table_name = 'SAP_AR'
+and groupesearch = 'ATTRIBUTENULL';
+
+
+insert into sap_errors (
+lot,
+org_id,
+table_name  ,
+cle1    ,
+libelle,
+groupesearch  )
+select lot, org_id_source ,'SAP_AR' , account_number_source , 
+         'WARNING : Client-Site est nouveau : '|| account_number_source || ' est hors perimetre avec un solde a ' || nvl(to_char(solde_source),'nul')  , 'ATTRIBUTENULL'
+from sap_ar
+where  eligible = 'Y' 
+and ( attribute4 is null or attribute5 is null )
+and  not ( nvl(attribute4,'x') = 'HP' or nvl(attribute5,'x') = 'HP' )
+and lot = sap_lot
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit;
 
 
 

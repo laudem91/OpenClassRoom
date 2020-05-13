@@ -31,7 +31,7 @@ CREATE TABLE SAP_AR
 
 create or replace view sap_ar_v
 as select * from sap_ar 
-where eligible = 'Y';
+where eligible = 'Y' and ( nvl(attribute4,'HP') != 'HP' or nvl(attribute5,'HP') != 'HP') ;
 
 
 
@@ -84,7 +84,8 @@ Birth_name  varchar2(40) ,
 Search_Term_1  varchar2(40),    
 Search_Term_2  varchar2(20),    
 Supplier  varchar2(80) ,    
-Group_Key  varchar2(10    ),
+KONZS  varchar2(100),
+KONZS_TRANSCO  varchar2(11),
 Natural_Person_Under_the_Tax varchar2( 1     ),
 Trading_Partner  varchar2( 80) ,    
 Suppress_Tax_Jurisdiction_Code  varchar2( 1     ),
@@ -206,7 +207,7 @@ Birth_name  || '";"' ||
 Search_Term_1  || '";"' ||
 Search_Term_2  || '";"' ||
 Supplier  || '";"' ||
-Group_Key  || '";"' ||
+KONZS_TRANSCO  || '";"' ||
 Natural_Person_Under_the_Tax || '";"' ||
 Trading_Partner  || '";"' ||
 Suppress_Tax_Jurisdiction_Code  || '";"' ||
@@ -311,7 +312,7 @@ Birth_name  || '";="' ||
 Search_Term_1  || '";="' ||
 Search_Term_2  || '";="' ||
 Supplier  || '";="' ||
-Group_Key  || '";="' ||
+KONZS_TRANSCO  || '";="' ||
 Natural_Person_Under_the_Tax || '";="' ||
 Trading_Partner  || '";="' ||
 Suppress_Tax_Jurisdiction_Code  || '";="' ||

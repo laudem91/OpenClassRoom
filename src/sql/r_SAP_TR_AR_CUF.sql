@@ -22,9 +22,8 @@ attribute12=c1.duns
 where org_id = SAP_TOOLS_CC.soc_to_org_id(c1.soc)
 and cust_account_id = ( select cust_account_id from hz_cust_accounts where account_number = c1.client) 
 and party_site_id = ( select party_site_id from hz_party_sites where party_site_number  = c1.site ) ;
-end loop;
-
 x := x + sql%rowcount;
+end loop;
 
 dbms_output.put_line ( x || ' lignes updatées sur ' || tot || ' lignes lues');
 end;

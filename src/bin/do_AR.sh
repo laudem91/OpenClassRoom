@@ -26,6 +26,10 @@ r_AR_spoolall.sh
 echo "Extraction des données clients pour le lot =$1 et date de derniere ecriture >= $2  filtre=$3"
 echo
 
+echo "generation des rapports d'erreur et de transcodage"
+
+r_AR_trace.sh  $LOT
+
 echo "Log du traitement :  $LOGDATA"
 
 
